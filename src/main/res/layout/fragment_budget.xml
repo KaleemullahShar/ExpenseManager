@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="24dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Monthly Budget" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:id="@+id/summaryText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:background="@drawable/bg_card" android:padding="18dp" android:textSize="16sp" />
+    <ProgressBar android:id="@+id/budgetProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="16dp" android:layout_marginTop="16dp" android:max="100" />
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:hint="Budget amount"><com.google.android.material.textfield.TextInputEditText android:id="@+id/budgetInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" /></com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/saveBudgetButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Save budget" />
+</LinearLayout>

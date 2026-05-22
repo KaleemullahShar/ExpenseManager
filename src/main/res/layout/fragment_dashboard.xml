@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="100dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:background="@drawable/bg_primary" android:orientation="vertical" android:padding="22dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This month" android:textColor="@color/white" android:textSize="14sp" />
+            <TextView android:id="@+id/monthTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="34sp" android:textStyle="bold" />
+            <TextView android:id="@+id/remainingBudget" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="16dp">
+            <TextView android:id="@+id/totalExpenses" android:layout_width="0dp" android:layout_height="88dp" android:layout_weight="1" android:background="@drawable/bg_card" android:gravity="center" android:textStyle="bold" />
+            <Space android:layout_width="12dp" android:layout_height="1dp" />
+            <TextView android:id="@+id/budgetCard" android:layout_width="0dp" android:layout_height="88dp" android:layout_weight="1" android:background="@drawable/bg_card" android:gravity="center" android:textStyle="bold" />
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChart" android:layout_width="match_parent" android:layout_height="260dp" android:layout_margin="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp" android:text="Recent transactions" android:textSize="20sp" android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recentRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</ScrollView>

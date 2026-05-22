@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingBottom="90dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Expense History" android:textSize="26sp" android:textStyle="bold" />
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:hint="Search expenses">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/searchInput" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Spinner android:id="@+id/categorySpinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginHorizontal="16dp" android:layout_marginTop="8dp" />
+    <Spinner android:id="@+id/sortSpinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginHorizontal="16dp" />
+    <TextView android:id="@+id/emptyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="No expenses yet." android:gravity="center" android:visibility="gone" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/expensesRecycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>

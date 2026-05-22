@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SpendWise</string>
+    <string name="tagline">Smart Expense Manager</string>
+    <string name="currency_default">$</string>
+</resources>

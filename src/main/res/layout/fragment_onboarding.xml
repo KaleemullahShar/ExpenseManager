@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="28dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SpendWise" android:textSize="34sp" android:textStyle="bold" android:gravity="center" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Track expenses, manage budgets, scan receipts, and understand where your money goes." android:gravity="center" android:textSize="16sp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/startButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="Get started" />
+</LinearLayout>

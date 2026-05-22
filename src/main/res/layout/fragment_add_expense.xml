@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add Expense" android:textSize="28sp" android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:hint="Title"><com.google.android.material.textfield.TextInputEditText android:id="@+id/titleInput" android:layout_width="match_parent" android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Amount"><com.google.android.material.textfield.TextInputEditText android:id="@+id/amountInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" /></com.google.android.material.textfield.TextInputLayout>
+        <Spinner android:id="@+id/categorySpinner" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="12dp" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Notes"><com.google.android.material.textfield.TextInputEditText android:id="@+id/notesInput" android:layout_width="match_parent" android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/scanButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Scan receipt" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Save expense" />
+    </LinearLayout>
+</ScrollView>
